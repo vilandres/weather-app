@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
@@ -9,13 +10,17 @@
 <title>Weather App</title>
 
 <body>
-    <h1>Weather App</h1>
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
 
-    <input type="text" id="cityInput" placeholder="Enter city...">
-    <button id="searchBtn">Search</button>
+    <div class="input-row">
+      <input type="text" id="cityInput" placeholder="Enter a city..." />
+      <button id="searchBtn">Search</button>
+    </div>
 
     <div id="result"></div>
-    
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

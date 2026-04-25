@@ -25,6 +25,7 @@ searchBtn.addEventListener("click", function() {
                 <p>💧 Humidity: ${data.main.humidity}%</p>
                 <p>🌤️ ${data.weather[0].description}</p>
             `;
+            result.classList.add("visible");
         })
         .catch(function() {
             result.innerHTML = "<p>City not found. Try again.</p>";
